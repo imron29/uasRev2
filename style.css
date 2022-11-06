@@ -1,0 +1,81 @@
+* {
+  font-family: poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+/* Footer */
+li a {
+  color: #ffffff !important;
+}
+
+p a {
+  color: #ffffff !important;
+}
+
+#team {
+  background-color: #323232;
+}
+
+.section-padding {
+  padding: 100px o;
+}
+
+.jumbotron {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.288) 0%, rgba(5, 5, 5, 0.9) 100%),
+    url("https://ceklist.id/wp-content/uploads/2022/06/Pakan-Burung-Kenari.jpg");
+  color: white;
+  position: relative;
+  background-position: center -1px;
+  background-size: cover;
+  height: 650px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.jumbotron p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.jumbotron a {
+  margin: 20px;
+}
+
+.navbar-nav a {
+  color: #ffffff !important;
+  margin: 0 20px;
+  margin-top: 10px;
+}
+
+.navbar-toggler {
+  color: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: -1px;
+}
+
+.card .img-fixed-top {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.head {
+  background-color: #323232;
+}
