@@ -1,16 +1,18 @@
 * {
-  font-family: poppins;
+  font-family: 'Viga', sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 
 section {
   padding-top: 4rem;
@@ -23,6 +25,23 @@ li a {
 
 p a {
   color: #ffffff !important;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  text-align: center 0 20px !important;
+}
+
+.page-footer ul li a {
+  text-decoration: none;
+}
+
+.page-footer ul li a:hover {
+  color: rgb(106, 106, 106) !important;
+  transition: 0.5s;
 }
 
 #team {
@@ -40,12 +59,13 @@ p a {
   position: relative;
   background-position: center -1px;
   background-size: cover;
-  height: 650px;
+  height: 500px;
 }
 
 .jumbotron h1 {
   text-align: center;
   margin: 50px 0;
+  font-size: 40px;
 }
 
 .jumbotron p {
@@ -57,10 +77,14 @@ p a {
   margin: 20px;
 }
 
+.jumbotron .btn {
+  font-size: 12px;
+}
+
 .navbar-nav a {
   color: #ffffff !important;
   margin: 0 20px;
-  margin-top: 10px;
+  font-size: 12px;
 }
 
 .navbar-toggler {
@@ -70,6 +94,17 @@ p a {
 .nav-link:hover {
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
+}
+
+.navbar {
+  transition: all 0.5s;
+  color: #000000;
+}
+
+/* Anomation Scrolled */
+.navbar-scrolled {
+  background-color: #000000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card .img-fixed-top {
@@ -86,19 +121,39 @@ p a {
   background-color: #323232;
 }
 
-.navbar {
-  transition: all 0.5s;
-  color: #000000;
-}
-
-.navbar-scrolled {
-  background-color: #000000e2;
-  opacity: 80%;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
 .card-maps {
   color: #000000;
   background-color: rgba(255, 255, 255, 0.468);
   border: 1px solid rgba(255, 255, 255, 0.468);
+}
+
+/* Desktop Responsive */
+@media (min-width: 992px) {
+  .jumbotron {
+    height: 650px;
+  }
+
+  .jumbotron h1 {
+    font-size: 90px;
+    margin: 90px 0;
+  }
+
+  .jumbotron .btn {
+    font-size: 20px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .navbar-nav a {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 545px) {
+  .navbar-nav a {
+    font-size: 14px;
+  }
 }
