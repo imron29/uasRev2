@@ -40,14 +40,24 @@
         font-size: 20px;
       }
     }
+
+    .darkmode a {
+      color: #fff;
+    }
+
+    .darkmode a:hover {
+      color: rgb(0, 119, 255);
+      transition: all 0.3s;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body id="home" oncontextmenu="return false">
   <!-- Jumbotron -->
   <div class="jumbotron">
-    <h1 class="display-2" id="pustaka">Daftar Pustaka</h1>
-    <h4 class="lead text-uppercase text-center">Berikut Daftar Pustaka Yang Kami Ambil sebagai referesensi untuk
+    <h1 class="display-2" id="pustaka">Pustaka</h1>
+    <h4 class="lead text-uppercase text-center">Berikut Daftar Pustaka Yang Kami Ambil sebagai referensi untuk
       membangun website
       ini..</h4>
   </div>
@@ -136,7 +146,7 @@
   <!-- END -->
 
   <!-- Footer -->
-  <div class="page-footer" style="background-color: #000; opacity: 80%;">
+  <div class="page-footer" style="background-color: #292929;">
     <div class="container">
       <div class="row py-4 d-flex align-items-center">
         <div class="col-md-12 text-center">
@@ -205,7 +215,7 @@
     </div>
   </div>
 
-  <div id="footer" class="footer-Copyright text-left py-1 px-3" style="background-color: #000000de; opacity: 90%;">
+  <div id="footer" class="footer-Copyright text-left py-1 px-3" style="background-color: #292929;">
     <p class="text-white" style="margin-top: 15px; padding-left: 20px;">&copy; Disusun oleh.
       <a href="#home">Kelompok 3</a>
     </p>
@@ -253,6 +263,9 @@
 <script src="js/closeNav.js"></script>
 <!-- End -->
 <script src="js/audio.js"></script>
+
+<!-- Dark Mode -->
+<script src="js/darkmode.js"></script>
 </body>
 
 </html>

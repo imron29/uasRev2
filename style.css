@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  transition: 0.5s;
   min-height: 100vh;
 }
 
@@ -38,6 +39,10 @@ hr {
   text-align: center 0 20px !important;
 }
 
+input {
+  transition: 0.3s ease-in-out !important;
+}
+
 .page-footer ul li a {
   text-decoration: none;
 }
@@ -56,19 +61,26 @@ hr {
 }
 
 .jumbotron {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.288) 0%, rgba(5, 5, 5, 0.9) 100%),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.346) 0%, rgba(5, 5, 5, 0.238) 100%),
     url("img/Pakan-Burung-Kenari.jpg");
   color: white;
   position: relative;
-  background-position: center -1px;
+  background-position: center -0px;
   background-size: cover;
   height: 500px;
+  transition: 0.5s ease-in-out;
+}
+
+.card {
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
 }
 
 .jumbotron h1 {
   text-align: center;
   margin: 50px 0;
   font-size: 40px;
+  transition: 0.5s ease-in-out;
 }
 
 .jumbotron p {
@@ -82,12 +94,22 @@ hr {
 
 .jumbotron .btn {
   font-size: 12px;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-nav a {
   color: #ffffff !important;
   margin: 0 20px;
   font-size: 12px;
+}
+
+.form-check {
+  margin: 0 40px;
+}
+
+.form-check-label {
+  margin-top: 1.5px;
+  margin-left: 5px;
 }
 
 .navbar-toggler {
@@ -106,18 +128,8 @@ hr {
 
 /* Anomation Scrolled */
 .navbar-scrolled {
-  background-color: #000000;
+  background-color: #000000b8;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.card .img-fixed-top {
-  border: 1px solid #ffffff;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .head {
@@ -158,11 +170,13 @@ hr {
 @media (min-width: 992px) {
   .jumbotron {
     height: 650px;
+    transition: 0.5s ease-in-out;
   }
 
   .jumbotron h1 {
     font-size: 90px;
     margin: 90px 0;
+    transition: 0.5s ease-in-out;
   }
 
   .jumbotron .btn {
@@ -171,6 +185,7 @@ hr {
 
   h2 {
     text-align: left;
+    transition: 0.5s ease-in-out;
   }
 
   .navbar-nav a {
@@ -183,4 +198,37 @@ hr {
   .navbar-nav a {
     font-size: 14px;
   }
+}
+
+/* Dark Mode */
+
+
+.darkmode {
+  background-color: #292929;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.darkmode .card {
+  background-color: #292929;
+  transition: 0.5s ease-in-out;
+}
+
+
+.darkmode h5 {
+  color: #000000;
+}
+
+.darkmode .jumbotron {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.288) 0%, rgba(5, 5, 5, 0.9) 100%),
+    url("img/Pakan-Burung-Kenari.jpg");
+  color: white;
+  position: relative;
+  background-position: center -0px;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.darkmode hr {
+  color: #fff;
 }

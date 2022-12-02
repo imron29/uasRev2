@@ -54,6 +54,10 @@
         <li class="nav-item">
           <a class="nav-link" href="pustaka.html">Pustaka</a>
         </li>
+        <li class="nav-item form-check form-switch mt-1">
+          <input type="checkbox" class="form-check-input nav-link" id="checkbox" onclick="setDarkMode()">
+          <label class="form-check-label text-white" for="checkbox">Dark Mode</label>
+        </li>
       </ul>
     </div>
   </nav>
@@ -76,7 +80,7 @@
       <div class="row">
         <div class="col mb-3">
           <h2 style="font-weight: bold;">Apa Itu Burung Kenari?<br>
-            <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width: 350px; height: 1px;">
+            <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto dark-mode" style="width: 335px; height: 1px;">
           </h2>
         </div>
       </div>
@@ -227,13 +231,13 @@
       <div class="row text-center mb-2 text-white" style="padding-bottom: 30px;">
         <div class="col">
           <h2 style="font-weight: bold;">Tim<br>
-            <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 1px;">
+            <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 1px;">
           </h2>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-2"><img src="img/imam.jpeg" alt="" width="120"
+          <div class="card-center bg-white rounded shadow-sm py-2"><img src="img/imam.jpeg" alt="" width="120"
               class="img-fluid rounded-circle mb-3 shadow-sm">
             <h5 class="mb-4">Imam Hidayat</h5><span class="small text-uppercase text-muted">Penyusun Makalah,
               Penulis
@@ -241,22 +245,22 @@
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-2"><img src="img/ridola.JPG" alt="" width="120"
+          <div class="card-center bg-white rounded shadow-sm py-2"><img src="img/ridola.JPG" alt="" width="120"
               class="img-fluid rounded-circle mb-3 shadow-sm">
             <h5 class="mb-4">Ridola Parsito</h5><span class="small text-uppercase text-muted">Penulis Kode Pada Bagian
               Section Tim Dan Komentar.</span>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-2"><img src="img/salwa.png" alt="" width="120"
+          <div class="card-center bg-white rounded shadow-sm py-2"><img src="img/salwa.png" alt="" width="120"
               class="img-fluid rounded-circle mb-3 shadow-sm">
             <h5 class="mb-4">Salwa Nadifa</h5><span class="small text-uppercase text-muted">Dokumentasi, Pencari
               Referensi dan Point Penting Untuk Di cantumkan Pada Website.</span>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-2"><img src="img/imron.jpg" alt="" width="120"
-              class="img-fluid rounded-circle mb-3 shadow-sm">
+          <div class="card-center bg-white rounded shadow-sm py-2">
+            <img src="img/imron.jpg" alt="" width="120" class="img-fluid rounded-circle mb-3 shadow-sm">
             <h5 class="mb-4">Muhamad Imron S.P</h5><span class="small text-uppercase text-muted">Penulis Kode Pada
               Bagian Jumbotron Dan Galeri.</span>
           </div>
@@ -330,7 +334,7 @@
   <!-- End -->
 
   <!-- Footer -->
-  <div class="page-footer" style="background-color: #000; opacity: 80%;">
+  <div class="page-footer" style="background-color: #292929;">
     <div class="container">
       <div class="row py-4 d-flex align-items-center">
         <div class="col-md-12 text-center">
@@ -386,7 +390,7 @@
 
         <div id="kontak" class="col-md-3 mx-auto mb-4">
           <h5 class="text-uppercase font-weight-bolt text-white">Kontak</h5>
-          <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 90px; height: 1px;">
+          <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 80px; height: 1px;">
           <ul class="list-unstyled text-white">
             <li class="my-2"><i class="fa fa-phone mr-3"></i><a href="#">+6282343891</a></li>
             <li class="my-2"><i class="fa fa-instagram mr-3"></i><a href="#">Instagram</a></li>
@@ -398,7 +402,7 @@
     </div>
   </div>
 
-  <div id="footer" class="footer-Copyright text-left py-1 px-3" style="background-color: #000000de; opacity: 90%;">
+  <div id="footer" class="footer-Copyright text-left py-1 px-3" style="background-color: #292929;">
     <p class="text-white" style="margin-top: 15px; padding-left: 20px;">&copy; Disusun oleh.
       <a href="#home">Kelompok 3</a>
     </p>
@@ -445,6 +449,9 @@
 <script src="js/closeNav.js"></script>
 <!-- End -->
 <script src="js/audio.js"></script>
+
+<!-- Darkmode -->
+<script src="js/darkmode.js"></script>
 </body>
 
 </html>
