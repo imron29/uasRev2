@@ -56,6 +56,11 @@ input {
   background-color: #323232;
 }
 
+#about p {
+  font-size: 16px;
+  transition: 0.5s ease-in-out !important;
+}
+
 .section-padding {
   padding: 100px o;
 }
@@ -68,7 +73,7 @@ input {
   background-position: center -0px;
   background-size: cover;
   height: 500px;
-  transition: 0.5s ease-in-out;
+  padding: 0;
 }
 
 .card {
@@ -126,10 +131,10 @@ input {
   color: #000000;
 }
 
-/* Anomation Scrolled */
+/* Animation Scrolled */
 .navbar-scrolled {
-  background-color: #000000b8;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background-color: #201e1e;
+  box-shadow: 0 3px 10px rgb(40, 39, 39);
 }
 
 .head {
@@ -191,18 +196,15 @@ input {
   .navbar-nav a {
     font-size: 16px;
   }
-}
 
-/* Tablet Responsive */
-@media (min-width: 545px) {
-  .navbar-nav a {
-    font-size: 14px;
+
+  #about p {
+    font-size: 20px;
+    transition: 0.5s ease-in-out !important;
   }
 }
 
 /* Dark Mode */
-
-
 .darkmode {
   background-color: #292929;
   color: #fff;
@@ -226,9 +228,4 @@ input {
   position: relative;
   background-position: center -0px;
   background-size: cover;
-  transition: 0.5s ease-in-out;
-}
-
-.darkmode hr {
-  color: #fff;
 }
