@@ -6,7 +6,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0;
 }
 
 html {
@@ -31,16 +30,19 @@ p a {
   color: #ffffff !important;
 }
 
+
 h2 {
   text-align: center;
 }
 
 hr {
   text-align: center 0 20px !important;
+  background-color: #000000;
 }
 
 input {
   transition: 0.3s ease-in-out !important;
+  cursor: pointer;
 }
 
 .page-footer ul li a {
@@ -52,21 +54,17 @@ input {
   transition: 0.5s;
 }
 
+/* End */
 #team {
   background-color: #323232;
 }
 
-#about p {
-  font-size: 16px;
-  transition: 0.5s ease-in-out !important;
-}
-
-.section-padding {
-  padding: 100px o;
+.about-img {
+  margin-bottom: 30px;
 }
 
 .jumbotron {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.346) 0%, rgba(5, 5, 5, 0.238) 100%),
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.696) 0%, rgba(5, 5, 5, 0.238) 100%),
     url("img/Pakan-Burung-Kenari.jpg");
   color: white;
   position: relative;
@@ -78,7 +76,6 @@ input {
 
 .card {
   background-color: #fff;
-  transition: 0.5s ease-in-out;
 }
 
 .jumbotron h1 {
@@ -100,6 +97,7 @@ input {
 .jumbotron .btn {
   font-size: 12px;
   transition: 0.5s ease-in-out;
+  margin-top: 70px;
 }
 
 .navbar-nav a {
@@ -174,8 +172,22 @@ input {
 /* Desktop Responsive */
 @media (min-width: 992px) {
   .jumbotron {
-    height: 650px;
+    height: 750px;
     transition: 0.5s ease-in-out;
+  }
+
+  #gallery {
+    margin-top: 150px;
+  }
+
+  #gallery .card {
+    font-size: 14px;
+    background-color: #fff;
+    transition: 0.5 ease-in-out;
+  }
+
+  #gallery .btn {
+    font-size: 12px;
   }
 
   .jumbotron h1 {
@@ -186,6 +198,7 @@ input {
 
   .jumbotron .btn {
     font-size: 20px;
+    margin-top: 140px;
   }
 
   h2 {
@@ -197,16 +210,26 @@ input {
     font-size: 16px;
   }
 
-
-  #about p {
-    font-size: 20px;
-    transition: 0.5s ease-in-out !important;
+  hr {
+    background-color: #000000;
   }
+
+  .form-check {
+    margin: 0 40px;
+    margin-top: 20px;
+    padding-top: 2px;
+  }
+
+  .form-check-label {
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
 }
 
 /* Dark Mode */
 .darkmode {
-  background-color: #292929;
+  background-color: #000000;
   color: #fff;
   transition: 0.5s ease-in-out;
 }
@@ -214,11 +237,26 @@ input {
 .darkmode .card {
   background-color: #292929;
   transition: 0.5s ease-in-out;
+  color: #fff;
+}
+
+.darkmode .card h5 {
+  color: #fff;
+}
+
+.darkmode #gallery .card {
+  font-size: 14px;
+  background-color: #292929;
+  transition: 0.5 ease-in-out;
+}
+
+.darkmode #team h5 {
+  color: #fff;
 }
 
 
 .darkmode h5 {
-  color: #000000;
+  color: #ffffff;
 }
 
 .darkmode .jumbotron {

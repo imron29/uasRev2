@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="profile.css">
   <!-- FontsAwesome, FaIcon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,140 +15,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- LightBox -->
-  <link rel="stylesheet" href="dist/css/lightbox.css">
   <!-- BS.4&5 -->
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-  <link rel="icon" type="image/x-icon" href="img/kl.ico">
+  <link rel="icon" type="image/x-icon" href="../img/kl.ico">
   <title>Kenari Mania</title>
-  <style>
-    .container a {
-      color: #000;
-      text-decoration: none;
-      font-size: 12px;
-    }
-
-    .container a:hover {
-      color: rgb(0, 119, 255);
-      transition: all 0.3s;
-      text-decoration: underline;
-    }
-
-    @media (min-width: 992px) {
-      .container a {
-        font-size: 20px;
-      }
-    }
-
-    .darkmode a {
-      color: #fff;
-    }
-
-    .darkmode a:hover {
-      color: rgb(0, 119, 255);
-      transition: all 0.3s;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body id="home" oncontextmenu="return false">
+  <!-- Nav -->
+  <nav class=" navbar navbar-expand-lg fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true" style="color:#ffffff;"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"><i class="fa-solid fa-house mr-2"></i>Home</a>
+        </li>
+        <li class="nav-item form-check form-switch mt-1">
+          <input type="checkbox" class="form-check-input nav-link" id="checkbox" onclick="setDarkMode()">
+          <label class="form-check-label text-white" for="checkbox">Dark Mode</label>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End -->
   <!-- Jumbotron -->
   <div class="jumbotron">
-    <h1 class="display-2" id="pustaka">Pustaka</h1>
-    <h4 class="lead text-uppercase text-center">Berikut Daftar Pustaka Yang Kami Ambil sebagai referensi untuk
-      membangun website
-      ini..</h4>
+    <h1 class="display-2" id="pustaka">Kenari Kepala-hitam</h1>
   </div>
   <!-- End -->
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="about section-padding" style="top: 50px;">
     <div class="container">
       <div class="row">
-        <div class="col mb-3">
-          <h2 data-aos="fade-right" data-aos-duration="500" style="font-weight: bold;">Daftar Pustaka<br>
-            <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width: 220px; height: 1px;">
-          </h2>
+        <h2 class="mb-1" style="font-weight: bold;">Profile<br>
+          <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width: 95px; height: 1px;">
+        </h2>
+
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img" data-aos="fade-right" data-aos-delay="50" data-aos-duration="800"
+            data-aos-once="false">
+            <img src="../gallery/black.jpeg" alt="" class="img-fluid mt-5">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-5">
+          <div class="tentang">
+            <h2 style="top: 50px;">Kenari Kepala-hitam (Black Headed Canaries)</h2>
+            <p data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600" data-aos-once="false">
+              Kenari Kepala-hitam (Black Headed Canaries) : </b>
+              Ciri burung ini mempunyai panjang tubuh black-headed canary sekitar 12-14 cm.
+              Tidak seperti kenari yang memerlukan perhatian khusus dalam sexing (identifikasi jenis kelamin),
+              kenari kepala-hitam mudah dibedakan antara jantan dan betina, berdasarkan penampilan dan warna bulunya.
+            </p>
+            <a href="../index.html" class="btn btn-warning text-uppercase mb-5 text-white text-decoration-none"
+              data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" data-aos-once="false">kembali</a>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center fs-5">
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">
-            <p style="padding-left: 4px;">https://getbootstrap.com/docs/4.0/getting-started/introduction/</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://www.w3schools.com/howto/howto_css_transition_hover.asp">
-            <p style="padding-left: 4px;">https://www.w3schools.com/howto/howto_css_transition_hover.asp</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://github.com/lokesh/lightbox2">
-            <p style="padding-left: 4px;">https://github.com/lokesh/lightbox2</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://stackoverflow.com/questions/63141494/how-to-create-jumbotron-in-bootstrap-5">
-            <p style="padding-left: 4px;">
-              https://stackoverflow.com/questions/63141494/how-to-create-jumbotron-in-bootstrap-5</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://github.com/michalsnik/aos">
-            <p style="padding-left: 4px;">https://github.com/michalsnik/aos</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a
-            href="https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b">
-            <p style="padding-left: 4px;">
-              https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
-            </p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://stackoverflow.com/questions/38316679/autoplay-html-audio-created-with-javascript">
-            <p style="padding-left: 4px;">
-              https://stackoverflow.com/questions/38316679/autoplay-html-audio-created-with-javascript</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://freefrontend.com/bootstrap-cards/">
-            <p style="padding-left: 4px;">https://freefrontend.com/bootstrap-cards/</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://stackoverflow.com/questions/45434935/transition-in-navbar-when-scroll-down">
-            <p style="padding-left: 4px;">
-              https://stackoverflow.com/questions/45434935/transition-in-navbar-when-scroll-down</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://github.com/jamiewilson/form-to-google-sheets">
-            <p style="padding-left: 4px;">
-              https://github.com/jamiewilson/form-to-google-sheets</p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://fontawesome.com/icons">
-            <p style="padding-left: 4px;">https://fontawesome.com/icons
-            </p>
-          </a>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="1200">
-          <a href="https://www.pinhome.id/blog/jenis-burung-kenari-lengkap-dengan-gambar/">
-            <p style="padding-left: 4px; padding-bottom: 50px;">
-              https://www.pinhome.id/blog/jenis-burung-kenari-lengkap-dengan-gambar/
-            </p>
-          </a>
-        </div>
-        <p class="lead">
-          <a class="btn btn-success btn-lg shadow-sm" href="index.html"><span>Kembali.</span></a>
-        </p>
-      </div>
+    </div>
+    <div class="area mt-5">
+      <h1></h1>
     </div>
   </section>
   <!-- END -->
@@ -245,10 +178,6 @@
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <!-- End -->
 
-<!-- LightBox -->
-<script src="dist/js/lightbox-plus-jquery.min.js"></script>
-<!-- End -->
-
 <!-- BS.4 -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -263,7 +192,7 @@
 <!-- End -->
 
 <!-- NavScrolled In/Out -->
-<script src="js/scolled.js"></script>
+<script src="../js/scolled.js"></script>
 <!-- End -->
 
 <!-- Auto Close NAV -->
@@ -272,7 +201,7 @@
 <script src="js/audio.js"></script>
 
 <!-- Dark Mode -->
-<script src="js/darkmode.js"></script>
+<script src="../js/darkmode.js"></script>
 </body>
 
 </html>
